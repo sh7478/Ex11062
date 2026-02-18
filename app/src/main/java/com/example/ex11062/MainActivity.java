@@ -2,6 +2,7 @@ package com.example.ex11062;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,13 +13,16 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Costume[] costumes = new Costume[7];
+    Spinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         makeData();
         ArrayAdapter<Costume> adapter = new ArrayAdapter<Costume>(this, android.R.layout.simple_spinner_dropdown_item, costumes);
-
+        CustomAdapter customAdapter = new CustomAdapter(this, costumes);
+        spinner.setAdapter(customAdapter);
     }
 
     public void makeData()
