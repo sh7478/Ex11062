@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         outputTv = findViewById(R.id.outputTv);
         spin = findViewById(R.id.spinner);
         makeData();
-        ArrayAdapter<Costume> adapter = new ArrayAdapter<Costume>(this, android.R.layout.simple_spinner_dropdown_item, costumes);
         CustomAdapter customAdapter = new CustomAdapter(this, costumes);
         spin.setAdapter(customAdapter);
         spin.setOnItemSelectedListener(this);
