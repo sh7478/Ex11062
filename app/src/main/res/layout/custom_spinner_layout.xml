@@ -9,29 +9,27 @@
         android:id="@+id/imgCstm"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="20" />
+        android:layout_weight="25" />
 
     <TextView
         android:id="@+id/tvNameCstm"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="20" />
+        android:layout_weight="25"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/tvCatCstm"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="20" />
+        android:layout_weight="25"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/tvLvlCstm"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="20" />
+        android:layout_weight="25"
+        android:gravity="center" />
 
-    <TextView
-        android:id="@+id/tvAccsesoriesCstm"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="20" />
 </LinearLayout>

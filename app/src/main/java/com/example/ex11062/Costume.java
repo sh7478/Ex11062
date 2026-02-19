@@ -1,14 +1,16 @@
 package com.example.ex11062;
 
+import java.util.ArrayList;
+
 public class Costume {
     private String _name;
     private  String _Category;
     private int _level;
     private int _img;
-    private String[] _accessories;
+    private ArrayList<String> _accessories;
 
 
-    public Costume(String name, String category, int level, int img, String[] accessories)
+    public Costume(String name, String category, int level, int img, ArrayList<String>accessories)
     {
         _name = name;
         _Category = category;
@@ -49,11 +51,9 @@ public class Costume {
         this._img = _img;
     }
 
-    public String[] get_accessories() {
+    public ArrayList<String> get_accessories() {
         return _accessories;
     }
 
-    public void set_accessories(String[] _accessories) {
-        this._accessories = _accessories;
-    }
+    public void set_accessories(ArrayList<String> _accessories) {this._accessories = _accessories;}
 }

@@ -41,15 +41,11 @@ public class CustomAdapter extends BaseAdapter {
         TextView tvNameCstm = (TextView) view.findViewById(R.id.tvNameCstm);
         TextView tvCatCstm = (TextView) view.findViewById(R.id.tvCatCstm);
         TextView tvLvlCstm = (TextView) view.findViewById(R.id.tvLvlCstm);
-        TextView tvAccsesoriesCstm = (TextView) view.findViewById(R.id.tvAccsesoriesCstm);
-        imgCstm.setImageResource(costumes[i].get_img());
-        tvNameCstm.setText(costumes[i].get_name());
-        tvCatCstm.setText(costumes[i].get_Category());
-        tvLvlCstm.setText(costumes[i].get_level());
-        tvAccsesoriesCstm.setText("");
-        for(int j = 0; j < costumes[j].get_accessories().length; j++)
-        {
-            tvAccsesoriesCstm.append(costumes[i].get_accessories()[j]);
+        if(costumes[i] != null) {
+            imgCstm.setImageResource(costumes[i].get_img());
+            tvNameCstm.setText(costumes[i].get_name());
+            tvCatCstm.setText(costumes[i].get_Category());
+            tvLvlCstm.setText(String.valueOf(costumes[i].get_level()));
         }
         return view;
 
